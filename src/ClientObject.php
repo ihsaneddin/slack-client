@@ -17,7 +17,7 @@ abstract class ClientObject extends DataObject
      * @param ApiClient $client The API client the object belongs to.
      * @param array     $data   An array of model data.
      */
-    public function __construct(ApiClient $client, array $data)
+    public function __construct(ApiClient $client = null, array $data)
     {
         $this->client = $client;
         $this->data = $data;
